@@ -1,33 +1,14 @@
-# ATM Redo mod for Minetest
+# ATM SH mod for Minetest
 
-original by gpcf: http://gpcf.eu/atm.git (no longer available)
-
-updated and improved by RB
-
-## New
-
-*Improved, high quality graphics.
-
-*Added ability to process 50 and 100 minegeld denominations.
-
-*Reduced 3 ATMs down to 1 that does everything.
-
-This mod adds an ATM (Automatic Teller Machine) and MWT (Money Wire Transfer) 
-designed to work with the currency mod and its minegeld banknotes. 
-ATMs allow you to transfer money to your bank account and withdraw
-various sums as needed.  The ATM allows to add and withdraw banknotes 
-by ones, tens, and hundreds in denominations of 1, 5, 10, 50, and 100.  
-MWTs allow you to send funds to other players registered with a bank account.
+updated and improved by RB and then by Sovenok-Hacker
 
 ## Crafting ATM
 
 ```
-[ steel ingot, mese crystal, steel ingot ]
-[ glass,       10 MG note,   steel ingot ]
-[ steel ingot, mese crystal, steel ingot ]
+[ steel ingot, glass, steel ingot ]
+[ copper ingot, 10 MG note, copper ingot ]
+[ steel ingot, steel ingot, steel ingot ]
 ```
-
-If mesecons mod is not installed, then the mese wire in recipes is replaced by a copper ingot.
 
 ## Crafting MWT
 
@@ -39,9 +20,9 @@ clean it once the stored data are no longer of any relevance. Otherwise, the tra
 is preserved indefinitely.
 
 ```
-[ steel ingot, mese crystal, steel ingot ]
-[ glass,       mese wire,    steel ingot ]
-[ steel ingot, mese crystal, steel ingot ]
+[ steel ingot, glass, steel ingot ]
+[ steel ingot, 1 MG note, steel ingot ]
+[ steel ingot, tin ingot, steel ingot ]
 ```
 
 To complete a Money Wire Transfer a player must provide the name of the recipient with an
@@ -51,4 +32,3 @@ After entering those parameters the terminal checks their validity and if there 
 the player is shown the final confirmation window. If the player confirms the payment, the specified
 amount will be transfered immediately. At this point the transaction is final.
 If there are errors, a corresponding message is shown in the chat, and the transaction is aborted.
-
