@@ -8,7 +8,7 @@ atm = {
   pending_transfers = {},
   completed_transactions = {},
   pth = minetest.get_worldpath().."/atm_accounts",
-  pth_wt = minetest.get_worldpath().."/atm_wt_transactions"
+  pth_wt = minetest.get_worldpath().."/atm_wt_transactions.json"
 }
 
 
